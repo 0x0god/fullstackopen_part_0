@@ -1,0 +1,21 @@
+note over browser:
+The POST request send to the server
+contains JSON data with our new note
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+The server doesn't send back any further
+request after receiving request from
+the browser, just information about 
+http response (201 created)
+end note
+
+browser-->browser: add dynamically new note to the list
+
+note over browser:
+New note is added to the list
+and whole element rerendered
+on client side with JavaScript
+end note
